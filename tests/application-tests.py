@@ -30,6 +30,10 @@ class AppTestCase(unittest.TestCase):
         with application.app_context():
             self.client = current_app.test_client()
 
+    def test_load_config_also(self):
+        """ Test that we can load our config properly """
+        self.assertTrue(1)
+
     def test_load_config(self):
         """ Test that we can load our config properly """
         self.assertTrue(1)
